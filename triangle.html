@@ -1,0 +1,33 @@
+<html>
+<head>
+    <style>
+    .triangle {
+  width: 0; 
+  height: 0; 
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-bottom: 100px solid powderblue;
+  margin: 300px 150px 80px 400px;
+        		transform: translate(120px, 120px);
+				animation: rotateTriangle 1s linear infinite;
+}
+        body::before {
+            position:absolute;
+            z-index:1;
+            top:48%;
+            left:33%;
+            margin-top:45px;
+            margin-left:40px;
+            content:"keerthi";
+        }
+        	@keyframes rotateTriangle {
+				0% {transform:rotate(0deg);}
+				100% {transform:rotate(360deg);}
+			}
+
+ 
+}</style></head>
+<body>
+<div class="triangle"></div>
+</body>
+</html>
